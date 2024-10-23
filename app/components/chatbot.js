@@ -56,6 +56,7 @@ export default function Chatbot() {
           <div
             key={index}
             style={{
+            
               backgroundColor: message.sender === 'user' ? '#e0f7fa' : '#ffebee',
               padding: '10px',
               margin: '5px 0',
@@ -74,7 +75,7 @@ export default function Chatbot() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your message"
-          style={{ flex: '1', padding: '10px'}}
+          style={{ flex: '1', padding: '10px, text-color: black' }}
         />
         <button type="submit" style={{ padding: '10px' }}>Send</button>
       </form>
